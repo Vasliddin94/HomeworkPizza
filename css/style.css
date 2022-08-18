@@ -1,0 +1,197 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: url(https://www.wallpapertip.com/wmimgs/24-249670_high-resolution-wooden-background-hd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body::before{
+  content: '';
+  display: ;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index:-99999;
+  background-color: rgba(143, 143, 143, 0.4);
+}
+
+.card-body{
+  background-color: #9ED2C6;
+}
+
+.header1{
+  display: flex;
+  position: sticky;
+  top:0;
+  z-index: 3;
+}
+
+.header1 h1{
+  display: flex;
+  margin-top: 10px;
+  cursor: pointer;
+  position: sticky;
+  top:0;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  padding-right: 5px;
+}
+
+i span{
+  position: absolute;
+  font-size: 15px;
+  background-color: #F1B814;
+  border-radius: 50%;
+  padding: 2px 3px;
+  top: -7px;
+  right: 2px;
+}
+
+
+.item{
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+  justify-items:center;
+  transition: 0.8s;
+  width: %;
+}
+
+.item:hover{
+  transform: scale(1.03);
+}
+
+.plus, .minus{
+  background-color: #F1B814;
+  padding: 2px 6px;
+  font-weight: 600;
+  border-radius: 2px;
+  margin-right: 5px;
+  display: none;
+}
+
+
+
+.item .row{
+  width: 80%;
+}
+
+.fa-solid{
+  position: absolute;
+  right: 10px;
+  top:15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.item1:hover{
+  transform: scale(1.05);
+}
+
+
+.item-text button{
+
+  border: none;
+  border-radius: 5px;
+  background-color: #F1B814;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.mycart{
+  position: relative;
+  top: 10px;
+  left: 0;}
+
+  .plus, .minus{
+   width: 40px;
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+/* list item */
+
+.list-items .row img{
+
+}
+
+.list-items{
+  display: none;
+}
+
+.bought .container .list-items{
+  width: 100%;
+}
+
+
+
+
+.plus-minus{
+  display:flex;
+}
+
+.list-items .plus, .minus{
+  width: 40px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+
+/* footer */
+
+footer{
+  display:flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #fff;
+}
+
+footer button{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F1B814;
+  font-weight: 500;
+  transition: 1s;
+  padding-right: 10px;
+}
+
+footer button:after{
+  content: '';
+  display:inline-block;
+  background: url(../images/deliver.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 5px;
+  left: 3px;
+  transition: 1s;
+  animation: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
