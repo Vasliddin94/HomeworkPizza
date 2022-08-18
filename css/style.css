@@ -38,10 +38,12 @@ body::before{
 }
 
 img{
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 5px;
   padding-right: 5px;
+  transition: 2s;
+  border-radius: 80px;
 }
 
 i span{
@@ -68,6 +70,7 @@ i span{
   transform: scale(1.03);
 }
 
+
 .plus, .minus{
   background-color: #F1B814;
   padding: 2px 6px;
@@ -91,8 +94,8 @@ i span{
   cursor: pointer;
 }
 
-.item1:hover{
-  transform: scale(1.05);
+.item:hover img {
+  transform: rotate(30deg);
 }
 
 
@@ -103,6 +106,7 @@ i span{
   background-color: #F1B814;
   font-weight: 500;
   margin-bottom: 10px;
+  padding: 4px 40px;
 }
 
 .mycart{
@@ -116,6 +120,8 @@ i span{
    font-weight: 500;
  }
 
+
+
 /* list item */
 
 .list-items .row img{
@@ -124,6 +130,8 @@ i span{
 
 .list-items{
   display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .bought .container .list-items{
@@ -193,5 +201,26 @@ footer button:after{
   }
   100%{
     transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .item{
+    text-align: left;
+  }
+
+  .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+  }
+
+  .item img{
+    margin: 0;
+    padding: 0;
+  }
+  .item button{
+    position: relative;
   }
 }
