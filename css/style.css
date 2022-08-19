@@ -108,13 +108,14 @@ img{
 .price{
   pointer-events: none;
   margin-bottom: 10px;
-  width: 45px;
+  width: 50px;
   height: 30px;
   border-radius: 10px;
   border: none;
   background-color: inherit;
   font-size: 20px;
   font-weight: 600;
+
 }
 
 input::-webkit-outer-spin-button,
