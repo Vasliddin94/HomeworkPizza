@@ -15,7 +15,7 @@
             <div class="card header1">
               <h1 onclick="back()">To Go Menu</h1>
               <i class="fa-solid fa-cart-shopping" onclick="addChanges()"></i>
-              <input type="number" name="" value="0" id="num">
+              <input type="number" name="" value="0" id="num" >
             </div>
               <div class="card-body">
                 <div class="row">
@@ -26,10 +26,14 @@
                       </div>
                       <div class="item-text col-lg-6 col-xs-12">
                         <h3>Greek Style</h3>
-                        <p>$ <span class="price">12.99</span></p>
+                        <div class="price-sec">
+                          <span>$</span>
+                          <input type="text" name="price" class="price" placeholder="$" value="11">
+                        </div>
                         <button class="add1" type="button" name="button" onclick="add()">Add</button>
                         <div class="plus-minus">
                           <button class="plus" type="button" name="button" onclick="plus()">+</button>
+                          <input type="number" name="" value="0" id="quantity" >
                           <button class="minus" type="button" name="button" onclick="minus()">-</button>
                         </div>
                       </div>
@@ -42,10 +46,14 @@
                       </div>
                       <div class="item-text col-lg-6 col-xs-12">
                         <h3>Margarita</h3>
-                        <p>$ <span class="price">10.99</span></p>
+                        <div class="price-sec">
+                          <span>$</span>
+                          <input type="text" name="price" class="price" placeholder="$" value="10.99">
+                        </div>
                         <button class="add2" type="button" name="button" onclick='add2()'>Add</button>
                         <div class="plus-minus">
                           <button class="plus" type="button" name="button" onclick="plus()">+</button>
+                          <input type="number" name="" value="0" id="quantity" >
                           <button class="minus" type="button" name="button" onclick="minus()">-</button>
                         </div>
                       </div>
@@ -58,10 +66,14 @@
                       </div>
                       <div class="item-text col-lg-6">
                         <h3>Salad</h3>
-                        <p>$ <span class="price">11.99</span></p>
+                        <div class="price-sec">
+                          <span>$</span>
+                          <input type="text" name="price" class="price" placeholder="$" value="10.99">
+                        </div>
                         <button class="add3" type="button" name="button" onclick="add3()">Add</button>
                         <div class="plus-minus">
                           <button class="plus" type="button" name="button" onclick="plus()">+</button>
+                          <input type="number" name="" value="0" id="quantity" >
                           <button class="minus" type="button" name="button" onclick="minus()">-</button>
                         </div>
                       </div>
@@ -74,10 +86,14 @@
                       </div>
                       <div class="item-text col-lg-6">
                         <h3>Pepperoni</h3>
-                        <p>$ <span class="price">12.50</span></p>
+                        <div class="price-sec">
+                          <span>$</span>
+                          <input type="text" name="price" class="price" placeholder="$" value="10.99">
+                        </div>
                         <button class="add4" type="button" name="button" onclick="add4()">Add</button>
                         <div class="plus-minus">
                           <button class="plus" type="button" name="button" onclick="plus()">+</button>
+                          <input type="number" name="" value="0" id="quantity" >
                           <button class="minus" type="button" name="button" onclick="minus()">-</button>
                         </div>
                       </div>
@@ -90,10 +106,14 @@
                       </div>
                       <div class="item-text col-lg-6">
                         <h3>Mixed Emotions</h3>
-                        <p>$ <span class="price">15.99</span></p>
+                        <div class="price-sec">
+                          <span>$</span>
+                          <input type="text" name="price" class="price" placeholder="$" value="10.99">
+                        </div>
                         <button class="add5" type="button" name="button" onclick="add5()">Add</button>
                         <div class="plus-minus">
                           <button class="plus" type="button" name="button" onclick="plus()">+</button>
+                          <input type="number" name="" value="0" id="quantity" >
                           <button class="minus" type="button" name="button" onclick="minus()">-</button>
                         </div>
                       </div>
@@ -106,10 +126,14 @@
                       </div>
                       <div class="item-text col-lg-6">
                         <h3>Freedom</h3>
-                        <p>$ <span class="price">12.99</span></p>
+                        <div class="price-sec">
+                          <span>$</span>
+                          <input type="text" name="price" class="price" placeholder="$" value="10.99">
+                        </div>
                         <button class="add6" type="button" name="button" onclick="add6()">Add</button>
                         <div class="plus-minus">
                           <button class="plus" type="button" name="button" onclick="plus()">+</button>
+                          <input type="number" name="" value="0" id="quantity" >
                           <button class="minus" type="button" name="button" onclick="minus()">-</button>
                         </div>
                       </div>
@@ -124,7 +148,10 @@
                         <div class="row">
                           <h2 id="cart-head">Your Cart:</h2>
                           <footer>
-                            <h3>Total: $<span class="total-price">0</span></h3>
+                            <div class="total">
+                              <span>Total: $ </span>
+                              <input type="text" name="price" class="total-price"  value="0">
+                            </div>
                             <button class="deliver text-right" type="button" name="button" onclick="deliver()">Proceed to delivery</button>
                           </footer>
                         </div>

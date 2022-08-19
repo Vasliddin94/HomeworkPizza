@@ -18,6 +18,8 @@ function back(){
 
 
 let number=document.querySelector('#num');
+let totalPrice=document.querySelector('.total-price');
+
 function add(){
   let eventualList=document.querySelector('.list-items .row');
   let addItem=document.querySelector('.item1');
@@ -29,6 +31,11 @@ function add(){
   let minus=document.querySelector('.item1 .minus');
   minus.style.display='block';
   number.value++;
+  let quantity=document.querySelector('.item1 #quantity');
+  quantity.style.display='inline';
+  quantity.value++;
+  let price=document.querySelector('.item1 .price');
+  totalPrice.value=+price.value;
 
 }
 
@@ -43,6 +50,11 @@ function add2(){
   let minus=document.querySelector('.item2 .minus');
   minus.style.display='block';
   number.value++;
+  let quantity=document.querySelector('.item2 #quantity');
+  quantity.style.display='inline';
+  quantity.value++;
+  let price=document.querySelector('.item2 .price');
+  totalPrice.value=+price.value;
 }
 
 function add3(){
@@ -56,6 +68,11 @@ function add3(){
   let minus=document.querySelector('.item3 .minus');
   minus.style.display='block';
   number.value++;
+  let quantity=document.querySelector('.item3 #quantity');
+  quantity.style.display='inline';
+  quantity.value++;
+  let price=document.querySelector('.item3 .price');
+  totalPrice.value=+price.value;
 }
 
 function add4(){
@@ -69,6 +86,11 @@ function add4(){
   let minus=document.querySelector('.item4 .minus');
   minus.style.display='block';
   number.value++;
+  let quantity=document.querySelector('.item4 #quantity');
+  quantity.style.display='inline';
+  quantity.value++;
+  let price=document.querySelector('.item4 .price');
+  totalPrice.value=+price.value;
 }
 
 function add5(){
@@ -82,6 +104,11 @@ function add5(){
   let minus=document.querySelector('.item5 .minus');
   minus.style.display='block';
   number.value++;
+  let quantity=document.querySelector('.item5 #quantity');
+  quantity.style.display='inline';
+  quantity.value++;
+  let price=document.querySelector('.item5 .price');
+  totalPrice.value=+price.value;
 }
 
 function add6(){
@@ -95,6 +122,11 @@ function add6(){
   let minus=document.querySelector('.item6 .minus');
   minus.style.display='block';
   number.value++;
+  let quantity=document.querySelector('.item6 #quantity');
+  quantity.style.display='inline';
+  quantity.value++;
+  let price=document.querySelector('.item6 .price');
+  totalPrice.value=+price.value;
 }
 
 function minus() {
