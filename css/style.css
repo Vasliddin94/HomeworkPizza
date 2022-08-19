@@ -128,7 +128,13 @@ i span{
 
 
 /* list item */
-
+#cart-head{
+  position: sticky;
+  top: 55px;
+  display: flex;
+  z-index: 3;
+  background-color: #fff;
+}
 .list-items .row img{
 
 }
@@ -142,9 +148,6 @@ i span{
 .bought .container .list-items{
   width: 100%;
 }
-
-
-
 
 .plus-minus{
   display:flex;
@@ -225,7 +228,7 @@ footer button:after{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 70px;
+    padding-left: 60px;
   }
 
   .item img{
