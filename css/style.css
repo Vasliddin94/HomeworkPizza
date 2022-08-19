@@ -6,6 +6,7 @@ body{
   background: url(https://www.wallpapertip.com/wmimgs/24-249670_high-resolution-wooden-background-hd.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 body::before{
@@ -37,6 +38,10 @@ body::before{
   top:0;
 }
 
+.heade .header1{
+  background-color: #5EBEC4;
+}
+
 img{
   width: 160px;
   height: 160px;
@@ -63,7 +68,7 @@ i span{
   justify-content: center;
   justify-items:center;
   transition: 0.8s;
-  width: %;
+  background-color: #F6F4F2;
 }
 
 .item:hover{
@@ -162,18 +167,25 @@ footer{
   right: 0;
   z-index: 2;
   background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #FDF5DF;
 }
 
 footer button{
   position: absolute;
-  right: 10px;
-  top: 5px;
+  text-align: right;
   border: none;
   border-radius: 5px;
   background-color: #F1B814;
   font-weight: 500;
   transition: 1s;
   padding-right: 10px;
+  height: 40px;
+  right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+
 }
 
 footer button:after{

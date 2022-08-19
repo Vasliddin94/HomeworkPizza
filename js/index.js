@@ -4,7 +4,8 @@ function addChanges() {
   let mycart=document.querySelector('.mycart');
   mycart.style.display='block';
   let eventualList=document.querySelector('.list-items');
-  eventualList.style.display='block'
+  eventualList.style.display='block';
+  
 
 };
 
