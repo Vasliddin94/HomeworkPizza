@@ -129,10 +129,125 @@ function add6(){
   totalPrice.value=+price.value;
 }
 
-function minus() {
-  number.value--;
+
+function plus1(){
+  number.value++;
+  let quantity=document.querySelector('.item1 #quantity');
+  quantity.value++;
 }
 
-function plus() {
+function minus1() {
+  if (number.value>=1) {
+    number.value--;
+  }
+  let quantity=document.querySelector('.item1 #quantity');
+  if (quantity.value>1) {
+    quantity.value--;
+  }
+  else if (quantity.value=1) {
+    let item1=document.querySelector('.list-items .item1');
+    item1.style.display='none'
+  }
+}
+
+
+
+function plus2(){
   number.value++;
+  let quantity=document.querySelector('.item2 #quantity');
+  quantity.value++;
+}
+
+function minus2() {
+  if (number.value>=1) {
+    number.value--;
+  }
+  let quantity=document.querySelector('.item2 #quantity');
+  if (quantity.value>1) {
+    quantity.value--;
+  }
+  else if (quantity.value=1) {
+    let item2=document.querySelector('.list-items .item2');
+    item2.style.display='none'
+  }
+}
+
+function plus3(){
+  number.value++;
+  let quantity=document.querySelector('.item3 #quantity');
+  quantity.value++;
+}
+
+function minus3() {
+  if (number.value>=1) {
+    number.value--;
+  }
+  let quantity=document.querySelector('.item3 #quantity');
+  if (quantity.value>1) {
+    quantity.value--;
+  }
+  else if (quantity.value=1) {
+    let item3=document.querySelector('.list-items .item3');
+    item3.style.display='none'
+  }
+}
+
+function plus4(){
+  number.value++;
+  let quantity=document.querySelector('.item4 #quantity');
+  quantity.value++;
+}
+
+function minus4() {
+  if (number.value>=1) {
+    number.value--;
+  }
+  let quantity=document.querySelector('.item4 #quantity');
+  if (quantity.value>1) {
+    quantity.value--;
+  }
+  else if (quantity.value=1) {
+    let item4=document.querySelector('.list-items .item4');
+    item4.style.display='none'
+  }
+}
+
+function plus5(){
+  number.value++;
+  let quantity=document.querySelector('.item5 #quantity');
+  quantity.value++;
+}
+
+function minus5() {
+  if (number.value>=1) {
+    number.value--;
+  }
+  let quantity=document.querySelector('.item5 #quantity');
+  if (quantity.value>1) {
+    quantity.value--;
+  }
+  else if (quantity.value=1) {
+    let item5=document.querySelector('.list-items .item5');
+    item5.style.display='none'
+  }
+}
+
+function plus6(){
+  number.value++;
+  let quantity=document.querySelector('.item6 #quantity');
+  quantity.value++;
+}
+
+function minus6() {
+  if (number.value>=1) {
+    number.value--;
+  }
+  let quantity=document.querySelector('.item6 #quantity');
+  if (quantity.value>1) {
+    quantity.value--;
+  }
+  else if (quantity.value=1) {
+    let item6=document.querySelector('.list-items .item6');
+    item6.style.display='none'
+  }
 }
