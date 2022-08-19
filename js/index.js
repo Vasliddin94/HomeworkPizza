@@ -5,7 +5,7 @@ function addChanges() {
   mycart.style.display='block';
   let eventualList=document.querySelector('.list-items');
   eventualList.style.display='block';
-  
+
 
 };
 
@@ -17,7 +17,7 @@ function back(){
 }
 
 
-
+let number=document.querySelector('#num');
 function add(){
   let eventualList=document.querySelector('.list-items .row');
   let addItem=document.querySelector('.item1');
@@ -28,7 +28,8 @@ function add(){
   plus.style.display='block';
   let minus=document.querySelector('.item1 .minus');
   minus.style.display='block';
-  let num=document.querySelector('#num');
+  number.value++;
+
 }
 
 function add2(){
@@ -41,6 +42,7 @@ function add2(){
   plus.style.display='block';
   let minus=document.querySelector('.item2 .minus');
   minus.style.display='block';
+  number.value++;
 }
 
 function add3(){
@@ -53,6 +55,7 @@ function add3(){
   plus.style.display='block';
   let minus=document.querySelector('.item3 .minus');
   minus.style.display='block';
+  number.value++;
 }
 
 function add4(){
@@ -65,6 +68,7 @@ function add4(){
   plus.style.display='block';
   let minus=document.querySelector('.item4 .minus');
   minus.style.display='block';
+  number.value++;
 }
 
 function add5(){
@@ -77,6 +81,7 @@ function add5(){
   plus.style.display='block';
   let minus=document.querySelector('.item5 .minus');
   minus.style.display='block';
+  number.value++;
 }
 
 function add6(){
@@ -89,4 +94,13 @@ function add6(){
   plus.style.display='block';
   let minus=document.querySelector('.item6 .minus');
   minus.style.display='block';
+  number.value++;
+}
+
+function minus() {
+  number.value--;
+}
+
+function plus() {
+  number.value++;
 }
