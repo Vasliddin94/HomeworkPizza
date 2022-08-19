@@ -113,6 +113,8 @@ img{
   border-radius: 10px;
   border: none;
   background-color: inherit;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 input::-webkit-outer-spin-button,
