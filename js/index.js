@@ -111,11 +111,11 @@ function add6(){
   quantity.value++;
 }
 
-var price1=document.querySelector('.item1 .price');
-
+var price1=document.querySelector('.list-items .item1 .price')
 function plus1(){
+  var price1=document.querySelector('.list-items .item1 .price')
   number.value++;
-  let quantity=document.querySelector('.item1 #quantity');
+  let quantity=document.querySelector('.list-items .item1 #quantity');
   quantity.value++;
   price1.value=quantity.value*(11.50);
 }
@@ -124,115 +124,158 @@ function minus1() {
   if (number.value>=1) {
     number.value--;
   }
-  let quantity=document.querySelector('.item1 #quantity');
+  let quantity=document.querySelector('.list-items .item1 #quantity');
   if (quantity.value>1) {
     quantity.value--;
   }
   else if (quantity.value=1) {
-    let item1=document.querySelector('.list-items .item1');
-    item1.style.display='none'
+    let item1=document.querySelector('.list-items.list-items .item1');
+    item1.style.display='none';
+    let addChecked=document.querySelector('.add1');
+    addChecked.innerHTML='Add';
+    addChecked.disabled=false;
+    quantity.value--;
+    price1.value===0;
   }
-  price1.value=quantity.value-(11.50);
+  price1.value=-(11.50);
 }
 
 
 
+var price2=document.querySelector('.list-items .item2 .price')
 function plus2(){
   number.value++;
-  let quantity=document.querySelector('.item2 #quantity');
+  let quantity=document.querySelector('.list-items .item2 #quantity');
   quantity.value++;
+  price2.value=quantity.value*(10.99);
 }
 
 function minus2() {
   if (number.value>=1) {
     number.value--;
   }
-  let quantity=document.querySelector('.item2 #quantity');
+  let quantity=document.querySelector('.list-items .item2 #quantity');
   if (quantity.value>1) {
     quantity.value--;
   }
   else if (quantity.value=1) {
-    let item2=document.querySelector('.list-items .item2');
+    let item2=document.querySelector('.list-items.list-items .item2');
     item2.style.display='none'
+    let addChecked=document.querySelector('.add2');
+    addChecked.innerHTML='Add';
+    addChecked.disabled=false;
+    quantity.value--;
   }
+  price2.value=-(10.99);
 }
 
+var price3=document.querySelector('.list-items .item3 .price')
 function plus3(){
   number.value++;
-  let quantity=document.querySelector('.item3 #quantity');
+  let quantity=document.querySelector('.list-items .item3 #quantity');
   quantity.value++;
+  price3.value=quantity.value*(10.99);
 }
 
 function minus3() {
   if (number.value>=1) {
     number.value--;
   }
-  let quantity=document.querySelector('.item3 #quantity');
+  let quantity=document.querySelector('.list-items .item3 #quantity');
   if (quantity.value>1) {
     quantity.value--;
   }
   else if (quantity.value=1) {
-    let item3=document.querySelector('.list-items .item3');
-    item3.style.display='none'
+    let item3=document.querySelector('.list-items.list-items .item3');
+    item3.style.display='none';
+    let addChecked=document.querySelector('.add3');
+    addChecked.innerHTML='Add';
+    addChecked.disabled=false;
+    quantity.value--;
   }
+  price3.value=-(10.99);
 }
 
+var price4=document.querySelector('.list-items .item4 .price')
 function plus4(){
+  var price4=document.querySelector('.list-items .item4 .price')
   number.value++;
-  let quantity=document.querySelector('.item4 #quantity');
+  let quantity=document.querySelector('.list-items .item4 #quantity');
   quantity.value++;
+  price4.value=quantity.value*(10.99);
 }
 
 function minus4() {
   if (number.value>=1) {
     number.value--;
   }
-  let quantity=document.querySelector('.item4 #quantity');
+  let quantity=document.querySelector('.list-items .item4 #quantity');
   if (quantity.value>1) {
     quantity.value--;
   }
   else if (quantity.value=1) {
-    let item4=document.querySelector('.list-items .item4');
-    item4.style.display='none'
+    let item4=document.querySelector('.list-items.list-items .item4');
+    item4.style.display='none';
+    let addChecked=document.querySelector('.add4');
+    addChecked.innerHTML='Add';
+    addChecked.disabled=false;
+    quantity.value--;
   }
+  price4.value=-(11.50);
 }
 
+var price5=document.querySelector('.list-items .item5 .price')
 function plus5(){
+  var price1=document.querySelector('.list-items .item5 .price')
   number.value++;
-  let quantity=document.querySelector('.item5 #quantity');
+  let quantity=document.querySelector('.list-items .item5 #quantity');
   quantity.value++;
+  price5.value=quantity.value*(10.99);
 }
 
 function minus5() {
   if (number.value>=1) {
     number.value--;
   }
-  let quantity=document.querySelector('.item5 #quantity');
+  let quantity=document.querySelector('.list-items .item5 #quantity');
   if (quantity.value>1) {
     quantity.value--;
   }
   else if (quantity.value=1) {
-    let item5=document.querySelector('.list-items .item5');
-    item5.style.display='none'
+    let item5=document.querySelector('.list-items.list-items .item5');
+    item5.style.display='none';
+    let addChecked=document.querySelector('.add5');
+    addChecked.innerHTML='Add';
+    addChecked.disabled=false;
+    quantity.value--;
   }
+  price5.value=-(10.99);
 }
 
+var price6=document.querySelector('.list-items .item6 .price')
 function plus6(){
+  var price1=document.querySelector('.list-items .item6 .price')
   number.value++;
-  let quantity=document.querySelector('.item6 #quantity');
+  let quantity=document.querySelector('.list-items .item6 #quantity');
   quantity.value++;
+  price6.value=quantity.value*(10.99);
 }
 
 function minus6() {
   if (number.value>=1) {
     number.value--;
   }
-  let quantity=document.querySelector('.item6 #quantity');
+  let quantity=document.querySelector('.list-items .item6 #quantity');
   if (quantity.value>1) {
     quantity.value--;
   }
   else if (quantity.value=1) {
-    let item6=document.querySelector('.list-items .item6');
-    item6.style.display='none'
+    let item6=document.querySelector('.list-items.list-items .item6');
+    item6.style.display='none';
+    let addChecked=document.querySelector('.add6');
+    addChecked.innerHTML='Add';
+    addChecked.disabled=false;
+    quantity.value--;
   }
+  price6.value=-(10.99);
 }

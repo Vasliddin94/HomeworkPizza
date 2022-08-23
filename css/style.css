@@ -304,14 +304,15 @@ footer button:after{
 
 @media only screen and (max-width: 600px) {
   .item{
-    text-align: left;
+    text-align: center;
   }
 
   .item{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .item img{
@@ -320,5 +321,17 @@ footer button:after{
   }
   .item button{
     position: relative;
+    width: 70%;
+  }
+
+  .price-sec{
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .list-items .item{
+    text-align: center;
   }
 }
