@@ -5,7 +5,8 @@ function addChanges() {
   mycart.style.display='block';
   let eventualList=document.querySelector('.list-items');
   eventualList.style.display='block';
-
+  let address=document.querySelector('.payment');
+  address.style.display='none';
 
 
 };
@@ -15,8 +16,7 @@ function back(){
   cardBody.style.display='block';
   let mycart=document.querySelector('.mycart');
   mycart.style.display='none'
-  let address=document.querySelector('.payment');
-  address.style.display='none';
+
 }
 
 
