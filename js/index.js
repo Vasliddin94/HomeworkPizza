@@ -21,36 +21,31 @@ let number=document.querySelector('#num');
 let totalPrice=document.querySelector('.total-price');
 
 function add(){
-  let eventualList=document.querySelector('.list-items .row');
-  let addItem=document.querySelector('.item1');
-  eventualList.append(addItem);
-  let addBtn=document.querySelector('.add1');
-  addBtn.style.display='none';
-  let plus=document.querySelector('.item1 .plus');
-  plus.style.display='block';
-  let minus=document.querySelector('.item1 .minus');
-  minus.style.display='block';
+  let bought1=document.querySelector('.list-items .item1');
+  bought1.style.display='block';
+  let plusMinus=document.querySelector('.list-items .item1 .plus-minus');
+  plusMinus.style.display='flex';
   number.value++;
-  let quantity=document.querySelector('.item1 #quantity');
+  let addChecked=document.querySelector('.add1');
+  addChecked.innerHTML='&#10003';
+  addChecked.disabled=true;
+  let quantity=document.querySelector('.list-items .item1 #quantity');
   quantity.style.display='inline';
   quantity.value++;
   let price=document.querySelector('.item1 .price');
   totalPrice.value=+price.value;
-
 }
 
 function add2(){
-  let eventualList=document.querySelector('.list-items .row');
-  let addItem=document.querySelector('.item2');
-  eventualList.append(addItem);
-  let addBtn=document.querySelector('.add2');
-  addBtn.style.display='none';
-  let plus=document.querySelector('.item2 .plus');
-  plus.style.display='block';
-  let minus=document.querySelector('.item2 .minus');
-  minus.style.display='block';
+  let bought1=document.querySelector('.list-items .item2');
+  bought1.style.display='block';
+  let plusMinus=document.querySelector('.list-items .item2 .plus-minus');
+  plusMinus.style.display='flex';
   number.value++;
-  let quantity=document.querySelector('.item2 #quantity');
+  let addChecked=document.querySelector('.add2');
+  addChecked.innerHTML='&#10003';
+  addChecked.disabled=true;
+  let quantity=document.querySelector('.list-items .item2 #quantity');
   quantity.style.display='inline';
   quantity.value++;
   let price=document.querySelector('.item2 .price');
@@ -58,82 +53,71 @@ function add2(){
 }
 
 function add3(){
-  let eventualList=document.querySelector('.list-items .row');
-  let addItem=document.querySelector('.item3');
-  eventualList.append(addItem);
-  let addBtn=document.querySelector('.add3');
-  addBtn.style.display='none';
-  let plus=document.querySelector('.item3 .plus');
-  plus.style.display='block';
-  let minus=document.querySelector('.item3 .minus');
-  minus.style.display='block';
+  let bought1=document.querySelector('.list-items .item3');
+  bought1.style.display='block';
+  let plusMinus=document.querySelector('.list-items .item3 .plus-minus');
+  plusMinus.style.display='flex';
   number.value++;
-  let quantity=document.querySelector('.item3 #quantity');
+  let addChecked=document.querySelector('.add3');
+  addChecked.innerHTML='&#10003';
+  addChecked.disabled=true;
+  let quantity=document.querySelector('.list-items .item3 #quantity');
   quantity.style.display='inline';
   quantity.value++;
-  let price=document.querySelector('.item3 .price');
-  totalPrice.value=+price.value;
 }
 
+
+
+
 function add4(){
-  let eventualList=document.querySelector('.list-items .row');
-  let addItem=document.querySelector('.item4');
-  eventualList.append(addItem);
-  let addBtn=document.querySelector('.add4');
-  addBtn.style.display='none';
-  let plus=document.querySelector('.item4 .plus');
-  plus.style.display='block';
-  let minus=document.querySelector('.item4 .minus');
-  minus.style.display='block';
+  let bought1=document.querySelector('.list-items .item4');
+  bought1.style.display='block';
+  let plusMinus=document.querySelector('.list-items .item2 .plus-minus');
+  plusMinus.style.display='flex';
   number.value++;
-  let quantity=document.querySelector('.item4 #quantity');
+  let addChecked=document.querySelector('.add4');
+  addChecked.innerHTML='&#10003';
+  addChecked.disabled=true;
+  let quantity=document.querySelector('.list-items .item4 #quantity');
   quantity.style.display='inline';
   quantity.value++;
-  let price=document.querySelector('.item4 .price');
-  totalPrice.value=+price.value;
 }
 
 function add5(){
-  let eventualList=document.querySelector('.list-items .row');
-  let addItem=document.querySelector('.item5');
-  eventualList.append(addItem);
-  let addBtn=document.querySelector('.add5');
-  addBtn.style.display='none';
-  let plus=document.querySelector('.item5 .plus');
-  plus.style.display='block';
-  let minus=document.querySelector('.item5 .minus');
-  minus.style.display='block';
+  let bought1=document.querySelector('.list-items .item5');
+  bought1.style.display='block';
+  let plusMinus=document.querySelector('.list-items .item5 .plus-minus');
+  plusMinus.style.display='flex';
   number.value++;
-  let quantity=document.querySelector('.item5 #quantity');
+  let addChecked=document.querySelector('.add5');
+  addChecked.innerHTML='&#10003';
+  addChecked.disabled=true;
+  let quantity=document.querySelector('.list-items .item5 #quantity');
   quantity.style.display='inline';
   quantity.value++;
-  let price=document.querySelector('.item5 .price');
-  totalPrice.value=+price.value;
 }
 
 function add6(){
-  let eventualList=document.querySelector('.list-items .row');
-  let addItem=document.querySelector('.item6');
-  eventualList.append(addItem);
-  let addBtn=document.querySelector('.add6');
-  addBtn.style.display='none';
-  let plus=document.querySelector('.item6 .plus');
-  plus.style.display='block';
-  let minus=document.querySelector('.item6 .minus');
-  minus.style.display='block';
+  let bought1=document.querySelector('.list-items .item6');
+  bought1.style.display='block';
+  let plusMinus=document.querySelector('.list-items .item6 .plus-minus');
+  plusMinus.style.display='flex';
   number.value++;
-  let quantity=document.querySelector('.item6 #quantity');
+  let addChecked=document.querySelector('.add6');
+  addChecked.innerHTML='&#10003';
+  addChecked.disabled=true;
+  let quantity=document.querySelector('.list-items .item6 #quantity');
   quantity.style.display='inline';
   quantity.value++;
-  let price=document.querySelector('.item6 .price');
-  totalPrice.value=+price.value;
 }
 
+var price1=document.querySelector('.item1 .price');
 
 function plus1(){
   number.value++;
   let quantity=document.querySelector('.item1 #quantity');
   quantity.value++;
+  price1.value=quantity.value*(11.50);
 }
 
 function minus1() {
@@ -148,6 +132,7 @@ function minus1() {
     let item1=document.querySelector('.list-items .item1');
     item1.style.display='none'
   }
+  price1.value=quantity.value-(11.50);
 }
 
 
