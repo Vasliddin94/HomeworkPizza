@@ -19,6 +19,8 @@ function back(){
 
 }
 
+let key=document.querySelector('#proceed');
+key.disabled=true;
 
 let number=document.querySelector('#num');
 let totalPrice=document.querySelector('.total-price');
@@ -37,6 +39,8 @@ function add(){
   quantity.value++;
   let price=document.querySelector('.item1 .price');
   totalPrice.value=+price.value;
+  let key=document.querySelector('#proceed');
+  key.disabled=false;
 }
 
 function add2(){
@@ -53,6 +57,8 @@ function add2(){
   quantity.value++;
   let price=document.querySelector('.item2 .price');
   totalPrice.value=+price.value;
+  let key=document.querySelector('#proceed');
+  key.disabled=false;
 }
 
 function add3(){
@@ -67,6 +73,8 @@ function add3(){
   let quantity=document.querySelector('.list-items .item3 #quantity');
   quantity.style.display='inline';
   quantity.value++;
+  let key=document.querySelector('#proceed');
+  key.disabled=false;
 }
 
 
@@ -84,6 +92,8 @@ function add4(){
   let quantity=document.querySelector('.list-items .item4 #quantity');
   quantity.style.display='inline';
   quantity.value++;
+  let key=document.querySelector('#proceed');
+  key.disabled=false;
 }
 
 function add5(){
@@ -98,6 +108,8 @@ function add5(){
   let quantity=document.querySelector('.list-items .item5 #quantity');
   quantity.style.display='inline';
   quantity.value++;
+  let key=document.querySelector('#proceed');
+  key.disabled=false;
 }
 
 function add6(){
@@ -112,6 +124,8 @@ function add6(){
   let quantity=document.querySelector('.list-items .item6 #quantity');
   quantity.style.display='inline';
   quantity.value++;
+  let key=document.querySelector('#proceed');
+  key.disabled=false;
 }
 
 var price1=document.querySelector('.list-items .item1 .price')
@@ -139,6 +153,8 @@ function minus1() {
     addChecked.disabled=false;
     quantity.value--;
     price1.value===0;
+    let key=document.querySelector('#proceed');
+    key.disabled=true;
   }
   price1.value=-(11.50);
 }
@@ -168,6 +184,8 @@ function minus2() {
     addChecked.innerHTML='Add';
     addChecked.disabled=false;
     quantity.value--;
+    let key=document.querySelector('#proceed');
+    key.disabled=true;
   }
   price2.value=-(10.99);
 }
@@ -195,6 +213,8 @@ function minus3() {
     addChecked.innerHTML='Add';
     addChecked.disabled=false;
     quantity.value--;
+    let key=document.querySelector('#proceed');
+    key.disabled=true;
   }
   price3.value=-(10.99);
 }
@@ -223,6 +243,8 @@ function minus4() {
     addChecked.innerHTML='Add';
     addChecked.disabled=false;
     quantity.value--;
+    let key=document.querySelector('#proceed');
+    key.disabled=true;
   }
   price4.value=-(11.50);
 }
@@ -251,6 +273,8 @@ function minus5() {
     addChecked.innerHTML='Add';
     addChecked.disabled=false;
     quantity.value--;
+    let key=document.querySelector('#proceed');
+    key.disabled=true;
   }
   price5.value=-(10.99);
 }
@@ -279,6 +303,8 @@ function minus6() {
     addChecked.innerHTML='Add';
     addChecked.disabled=false;
     quantity.value--;
+    let key=document.querySelector('#proceed');
+    key.disabled=true;
   }
   price6.value=-(10.99);
 }
@@ -296,5 +322,7 @@ function finalPage(){
   final.style.display='block';
   let address=document.querySelector('.payment');
   address.style.display='none';
-
+  let lastCard=document.querySelector('.last-card');
+  lastCard.style.display='block';
+  let address1=document.querySelector('.address1').value;
 }

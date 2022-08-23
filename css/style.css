@@ -365,7 +365,8 @@ form{
 }
 
 .last-card{
-  height: 150px;
+  height: 200px;
+  display: none;
 }
 
 
