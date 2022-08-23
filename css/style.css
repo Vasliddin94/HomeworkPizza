@@ -301,6 +301,7 @@ footer button:after{
 
 .payment{
   display: none;
+  height: 100%;
 }
 
 form{
@@ -329,7 +330,43 @@ form{
   padding: 3px 15px;
 }
 
+#last{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  width: 100%;
+}
 
+.fa-person-biking{
+  margin-right: 500px;
+  font-size: 50px;
+  position: absolute;
+  left: 50px;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(220%);
+  }
+}
+
+.home{
+  font-size: 50px;
+  position: absolute;
+  right: 50px;
+}
+
+.last-card{
+  height: 150px;
+}
 
 
 

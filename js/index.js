@@ -290,3 +290,11 @@ function payment() {
   let address=document.querySelector('.payment');
   address.style.display='block';
 }
+
+function finalPage(){
+  let final=document.querySelector('.onTheWay');
+  final.style.display='block';
+  let address=document.querySelector('.payment');
+  address.style.display='none';
+
+}
