@@ -244,14 +244,15 @@ input::-webkit-inner-spin-button {
 
 footer{
   display:flex;
-  position: sticky;
+  position:fixed;
   bottom: 0;
   right: 0;
-  z-index: 2;
   background-color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #FDF5DF;
+  margin-top: 30px;
+  padding-top: 20px;
 }
 
 footer button{
