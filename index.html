@@ -267,13 +267,26 @@
                               </div>
                             </div>
                           </div>
-                          <footer>
+                          <footer class='footer'>
                             <div class="total">
                               <span>Total: $ </span>
                               <input type="text" name="price" class="total-price"  value="0">
                             </div>
-                            <button class="deliver text-right" type="button" name="button" onclick="deliver()">Proceed to delivery</button>
+                            <button class="deliver text-right" type="button" name="button" onclick="payment()">Proceed to delivery</button>
                           </footer>
+                        </div>
+                      </div>
+                      <div class="payment">
+                          <div class="row">
+                            <form class="col-xs-12" action="index.html" method="post">
+                              <label for="address">Address:</label>
+                              <input class="col-xs-12 address1" type="address" name="addres" value="" placeholder="House, street">
+                              <label for="address2">Second-line:</label>
+                              <input class="col-xs-12" type="text" name="address" value="" placeholder="Town, City">
+                              <label for="address2">Postcode:</label>
+                                <input class="col-xs-12" type="text" name="address" value="" placeholder="Postcode">
+                            <button class="deliver2"  type="button" name="button">Deliver</button>
+                          </form>
                         </div>
                       </div>
                     </div>

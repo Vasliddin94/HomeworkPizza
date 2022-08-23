@@ -279,3 +279,11 @@ function minus6() {
   }
   price6.value=-(10.99);
 }
+
+
+function payment() {
+  let cart=document.querySelector('.list-items');
+  cart.style.display='none';
+  let address=document.querySelector('.payment');
+  address.style.display='block';
+}

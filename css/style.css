@@ -299,6 +299,40 @@ footer button:after{
   }
 }
 
+.payment{
+  display: none;
+}
+
+form{
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+}
+
+.payment input{
+  display: flex;
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.deliver2{
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: #F1B814;
+  font-weight: 500;
+  transition: 1s;
+  margin-top: 30px;
+  margin-bottom: auto;
+  padding: 3px 15px;
+}
+
+
+
+
+
 @media only screen and (max-width: 600px) {
   .item{
     text-align: center;
@@ -331,6 +365,13 @@ footer button:after{
   .list-items .item{
     text-align: center;
     padding-left: 60px;
+  }
+
+  .payment input{
+    display: flex;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid black;
   }
 
 }
