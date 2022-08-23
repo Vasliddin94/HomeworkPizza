@@ -7,6 +7,7 @@ function addChanges() {
   eventualList.style.display='block';
 
 
+
 };
 
 function back(){
@@ -14,6 +15,8 @@ function back(){
   cardBody.style.display='block';
   let mycart=document.querySelector('.mycart');
   mycart.style.display='none'
+  let address=document.querySelector('.payment');
+  address.style.display='none';
 }
 
 
