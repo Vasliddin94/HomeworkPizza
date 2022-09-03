@@ -48,6 +48,7 @@ body{
 .card-body{
   background-color: #9ED2C6;
   position: relative;
+  transition: 0.5s;
 }
 
 .header1{
