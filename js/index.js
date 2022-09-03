@@ -340,4 +340,11 @@ function background() {
 
 
 
-// setTimeout(back(), 500)
+// scroll reveal
+
+ScrollReveal().reveal('#main-menu', {
+  duration:2000,
+  origin:'top',
+  distance:'100px',
+  scale:0.8
+})
