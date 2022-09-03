@@ -460,7 +460,11 @@ form{
 @media screen and (max-width:576px) {
   .background{
     background: url(https://wallpaperaccess.com/full/3061693.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
+  #main-menu{
+    height:auto;
   }
 }
