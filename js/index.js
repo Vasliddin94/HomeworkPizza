@@ -334,7 +334,7 @@ function background() {
   setTimeout(function(){
     let back=document.querySelector('.background');
     back.style.display='none'
-  }, 500)
+  }, 700)
 }
 
 
