@@ -343,7 +343,7 @@ function background() {
 // scroll reveal
 
 ScrollReveal().reveal('#main-menu', {
-  duration:1500,
+  duration:2000,
   origin:'bottom',
   distance:'100px',
   scale:0.8
