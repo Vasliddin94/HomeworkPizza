@@ -44,15 +44,6 @@ body{
   font-family: 'Play', sans-serif;
 }
 
-body::before{
-  content: '';
-  display: ;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index:-99999;
-  background-color: rgba(143, 143, 143, 0.4);
-}
 
 .card-body{
   background-color: #9ED2C6;
