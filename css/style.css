@@ -12,6 +12,10 @@
   transition: 0.5s;
 }
 
+#main-menu{
+  height: 100vh;
+}
+
 a{
   list-style: none;
 }
