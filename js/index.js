@@ -342,7 +342,7 @@ function background() {
 
 // scroll reveal
 
-ScrollReveal().reveal('#main-menu', {
+ScrollReveal().reveal('#main-men', {
   duration:1500,
   origin:'bottom',
   distance:'100px',
