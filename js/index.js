@@ -328,3 +328,14 @@ function finalPage(){
   lastCard.style.display='block';
   let address1=document.querySelector('.address1').value;
 }
+
+
+function background() {
+  setTimeout(function(){
+    let back=document.querySelector('.background');
+    back.style.display='none'
+  }, 500)
+}
+
+
+// setTimeout(back(), 500)
