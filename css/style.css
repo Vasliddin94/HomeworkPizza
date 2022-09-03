@@ -12,9 +12,9 @@
   transition: 0.5s;
 }
 
-/* #main-menu{
-  height: 100vh;
-} */
+#main-menu{
+  height: auto;
+}
 
 a{
   list-style: none;
