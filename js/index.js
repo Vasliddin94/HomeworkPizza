@@ -23,9 +23,10 @@ let key=document.querySelector('#proceed');
 key.disabled=true;
 
 let number=document.querySelector('#num');
-let totalPrice=document.querySelector('.total-price');
+let totalPrice=Number(document.querySelector('.total-price').value);
 
 function add(){
+
   let bought1=document.querySelector('.list-items .item1');
   bought1.style.display='block';
   let plusMinus=document.querySelector('.list-items .item1 .plus-minus');
@@ -37,11 +38,12 @@ function add(){
   let quantity=document.querySelector('.list-items .item1 #quantity');
   quantity.style.display='inline';
   quantity.value++;
-  let price=document.querySelector('.item1 .price');
-  totalPrice.value=+price.value;
+  let price=Number(document.querySelector('.item1 .price').value);
   let key=document.querySelector('#proceed');
+  y+=price;
   key.disabled=false;
 }
+console.log(totalPrice);
 
 function add2(){
   let bought1=document.querySelector('.list-items .item2');

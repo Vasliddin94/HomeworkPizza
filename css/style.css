@@ -2,6 +2,34 @@
   box-sizing: border-box;
 }
 
+.back{
+  background: url(https://wallpapersmug.com/download/3840x2400/ebde76/delicious-pizza-food.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+a{
+  list-style: none;
+}
+
+.back-h{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  text-align: center;
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d) ;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.back i{
+  position: relative;
+  font-size: 60px;
+}
+
 body{
   background: url(https://www.wallpapertip.com/wmimgs/24-249670_high-resolution-wooden-background-hd.jpg);
   background-repeat: no-repeat;
@@ -21,6 +49,7 @@ body::before{
 
 .card-body{
   background-color: #9ED2C6;
+  height: 100vh;
 }
 
 .header1{
@@ -97,7 +126,7 @@ img{
 .total-price{
   pointer-events: none;
   margin-bottom: 10px;
-  width: 70px;
+  width: 200px;
   height: 30px;
   border-radius: 10px;
   border: none;
