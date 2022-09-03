@@ -344,7 +344,7 @@ function background() {
 
 ScrollReveal().reveal('#main-menu', {
   duration:1000,
-  origin:'top',
+  origin:'bottom',
   distance:'100px',
   scale:0.8
 })
