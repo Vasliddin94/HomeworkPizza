@@ -45,10 +45,11 @@ body{
 }
 
 
+
 .card-body{
   background-color: #9ED2C6;
   position: relative;
-  transition: 0.5s;
+  height: auto;
 }
 
 .header1{
@@ -119,24 +120,25 @@ img{
     display: flex;
     font-weight: 600;
     align-items: baseline;
-    font-size: 22px;
+    font-size: 18px;
     }
 
 .total-price{
   pointer-events: none;
-  margin-bottom: 10px;
   width: 200px;
   height: 30px;
   border-radius: 10px;
   border: none;
   background-color: inherit;
+  left: 0;
+
 }
 
 
 .price{
   pointer-events: none;
   margin-bottom: 10px;
-  width: 60px;
+  width: 100px;
   height: 30px;
   border-radius: 10px;
   border: none;
@@ -189,6 +191,8 @@ input::-webkit-inner-spin-button {
 .item:hover img {
   transform: rotate(30deg);
 }
+
+
 
 
 .item-text button{
@@ -272,15 +276,14 @@ input::-webkit-inner-spin-button {
 
 footer{
   display:flex;
-  position:fixed;
+  position:sticky;
+  width: 100%;
   bottom: 0;
   right: 0;
   background-color: #fff;
-  padding-top: 10px;
-  padding-bottom: 10px;
   background-color: #FDF5DF;
-  margin-top: 30px;
-  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 footer button{
@@ -291,9 +294,8 @@ footer button{
   background-color: #F1B814;
   font-weight: 500;
   transition: 1s;
-  padding-right: 10px;
   height: 40px;
-  right: 20px;
+  right: 0px;
   margin-top: auto;
   margin-bottom: auto;
 
@@ -310,17 +312,18 @@ footer button:after{
   top: 5px;
   left: 3px;
   transition: 1s;
-  animation: move;
-  animation-duration: 3s;
+  animation: move1;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
-@keyframes move {
+@keyframes move1 {
   0%{
     transform: translateX(0);
   }
   50%{
-    transform: translateX(100%);
+    transform: translateX(15%);
+
   }
   100%{
     transform: translateX(0);
@@ -329,7 +332,8 @@ footer button:after{
 
 .payment{
   display: none;
-  height: 100%;
+  height:100vh;
+  width: 100%;
 }
 
 form{
@@ -373,16 +377,17 @@ form{
   position: absolute;
   left: 50px;
   animation-name: move;
-  animation-duration: 5s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
 }
+
 
 @keyframes move {
   0%{
     transform: translateX(0%);
   }
   100%{
-    transform: translateX(220%);
+    transform: translateX(100%);
   }
 }
 
@@ -393,15 +398,100 @@ form{
 }
 
 .last-card{
-  height: 200px;
+  height: 100vh;
   display: none;
+  background: url(https://th.bing.com/th/id/R.b97b76e0ac8aedde06bf0fa277c9a1af?rik=bZztCWgbprYv2Q&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1955228.jpg&ehk=7Ia%2fTQpRgAhy7%2b6LvPHwPZmzxSt4ApykmtuGuKLM4xo%3d&risl=&pid=ImgRaw&r=0);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.progress{
+  height: 40px;
+  border: 0.5px solid darkslategray;
+  box-sizing: border-box;
+  font-size: 25px;
+  position: relative;
 }
 
 
 
-@media only screen and (max-width: 600px) {
+.progress-bar:first-child{
+  background-color: green;
+}
+
+.progress-bar:nth-child(2){
+  background-color: forestgreen;
+  animation-name: fill;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.progress-bar:nth-child(3){
+  background-color: transparent;
+  color: forestgreen;
+  position: relative;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 66%;
+}
+
+@keyframes fill {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 33%;
+  }
+  100%{
+    width: 0%
+  }
+}
+
+
+.onTheWay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  text-align: center;
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d) ;
+  opacity: 0.9;
+  width: 100%;
+  padding: 20px 5px;
+}
+
+.onTheWay a{
+  margin-top: 50px;
+  text-decoration:none;
+  color: inherit;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
   .item{
     text-align: center;
+  }
+  .last-card{
+    background: url(https://picjumbo.com/wp-content/uploads/pizza-quattro-formaggi-vertical-2210x3315.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .onTheWay h2{
+    font-size: 20px;
+  }
+
+  .progress{
+    height: 40px;
+    border: 0.5px solid darkslategray;
+    box-sizing: border-box;
+    font-size: 15px;
   }
 
   .item{
@@ -430,7 +520,7 @@ form{
 
   .list-items .item{
     text-align: center;
-    padding-left: 60px;
+    padding-left: 67px;
   }
 
   .payment input{
@@ -439,6 +529,7 @@ form{
     border: none;
     border-bottom: 1px solid black;
   }
+
   @keyframes move {
     0%{
       transform: translateX(0%);
@@ -458,6 +549,10 @@ form{
   }
 
   #main-menu{
+    height: auto;
+  }
+
+  .bought{
     height: auto;
   }
 }
