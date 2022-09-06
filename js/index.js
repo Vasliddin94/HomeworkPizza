@@ -7,7 +7,8 @@ function addChanges() {
   eventualList.style.display='block';
   let address=document.querySelector('.payment');
   address.style.display='none';
-
+  let background=document.querySelector('.background');
+  background.style.display='none'
 
 };
 

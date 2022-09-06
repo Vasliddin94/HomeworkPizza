@@ -13,7 +13,7 @@
 }
 
 #main-menu{
-  height: auto;
+  height: 100vh;
 }
 
 a{
@@ -284,6 +284,8 @@ footer{
   background-color: #FDF5DF;
   justify-content: center;
   align-items: center;
+  height: 8vh;
+  margin-bottom: 20px;
 }
 
 footer button{
@@ -420,7 +422,7 @@ form{
 }
 
 .progress-bar:nth-child(2){
-  background-color: forestgreen;
+  background-color: lightgreen;
   animation-name: fill;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -443,6 +445,7 @@ form{
   }
   50%{
     width: 33%;
+    background-color: green;
   }
   100%{
     width: 0%
@@ -463,9 +466,7 @@ form{
 }
 
 .onTheWay a{
-  margin-top: 50px;
   text-decoration:none;
-  color: inherit;
 }
 
 
