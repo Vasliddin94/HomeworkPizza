@@ -310,7 +310,7 @@ footer button:after{
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  position: relative;
+  position: inherit;
   top: 5px;
   left: 3px;
   transition: 1s;
