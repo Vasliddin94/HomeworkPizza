@@ -2,6 +2,7 @@
 
 *{
   box-sizing: border-box;
+  perspective: 1000px;
 }
 
 .background{
@@ -11,6 +12,25 @@
   height: 100vh;
   transition: 0.5s;
 }
+
+.coupon img{
+  width: 20%;
+  height: 60px;
+}
+
+.background .coupon{
+  perspective: 1000px;
+  padding-top: 20px;
+  padding-right: 400px;
+  text-align: center;
+  position: relative;
+  left: -200px;
+  width: 100%;
+   background-color: #c6e0da;
+   opacity: 0.7;
+   background-color: #c6e0da ;
+  transform: rotateZ(-17deg);
+  }
 
 #main-menu{
   height: 100vh;
@@ -26,9 +46,9 @@ a{
   left: 50%;
   transform:translate(-50%, -50%);
   text-align: center;
-  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d) ;
   opacity: 0.8;
   width: 100%;
+  background-color: #c6e0da ;;
 }
 
 .background i{
@@ -300,7 +320,10 @@ footer button{
   right: 0px;
   margin-top: auto;
   margin-bottom: auto;
+}
 
+#proceed{
+  buttton:disabled;
 }
 
 footer button:after{

@@ -20,6 +20,8 @@ function back(){
 
 }
 
+$('#proceed').prop('disabled', true)
+
 var number=document.querySelector('#num');
 let totalPrice=document.getElementById('total-price');
 
@@ -143,6 +145,14 @@ function minus1() {
   var price1=document.querySelector('.list-items .item1 .price')
   if (number.value>=1) {
     number.value--;
+
+  }
+  if (number.value==0) {
+    $('#proceed').prop('disabled', true);
+  }
+
+  else if(number.value===0){
+    $('#proceed').prop('disabled', true);
   }
   let quantity=document.querySelector('.list-items .item1 #quantity');
   if (quantity.value>1) {
@@ -174,6 +184,13 @@ function minus2() {
   if (number.value>=1) {
     number.value--;
   }
+
+  if (number.value==0) {
+    $('#proceed').prop('disabled', true);
+  }
+
+
+
   let quantity=document.querySelector('.list-items .item2 #quantity');
   if (quantity.value>1) {
     quantity.value--;
@@ -206,6 +223,9 @@ function minus3() {
   if (number.value>=1) {
     number.value--;
   }
+  if (number.value==0) {
+    $('#proceed').prop('disabled', true);
+  }
   let quantity=document.querySelector('.list-items .item3 #quantity');
   if (quantity.value>1) {
     quantity.value--;
@@ -235,6 +255,9 @@ function minus4() {
   var price4=document.querySelector('.list-items .item4 .price')
   if (number.value>=1) {
     number.value--;
+  }
+  if (number.value==0) {
+    $('#proceed').prop('disabled', true);
   }
   let quantity=document.querySelector('.list-items .item4 #quantity');
   if (quantity.value>1) {
@@ -266,6 +289,9 @@ function minus5() {
   if (number.value>=1) {
     number.value--;
   }
+  if (number.value==0) {
+    $('#proceed').prop('disabled', true);
+  }
   let quantity=document.querySelector('.list-items .item5 #quantity');
   if (quantity.value>1) {
     quantity.value--;
@@ -296,6 +322,9 @@ function minus6() {
   if (number.value>=1) {
     number.value--;
   }
+  if (number.value==0) {
+    $('#proceed').prop('disabled', true);
+  }
   let quantity=document.querySelector('.list-items .item6 #quantity');
   if (quantity.value>1) {
     quantity.value--;
@@ -312,6 +341,8 @@ function minus6() {
   totalPrice.value=number.value*(10.99);
 }
 
+
+
 function payment() {
     let cart=document.querySelector('.list-items');
     cart.style.display='none';
@@ -319,23 +350,45 @@ function payment() {
     address.style.display='block';
 }
 
+$('.deliver2').prop('disabled',true)
+
+$('.address1').keyup(function() {
+  if($(this).val().length>=5){
+    $('.deliver2').prop('disabled',false)
+  }
+  if($(this).val().length==1){
+    $('.deliver2').prop('disabled',true)
+  }
+})
+
 function finalPage(){
   let address1=document.querySelector('.address1').value;
   let header1=document.querySelector('.header1');
-  if (address1.length>5) {
-    let final=document.querySelector('.onTheWay');
+  if (address1.length>5 && $('.address2').val().length>5 && $('.address3').val().length>6) {
+    let a=prompt('Please enter promo code:');
+    if(a.toLowerCase()==='vasliddin'){
+      alert('Congratulations you have succesfully activated your prome code!!! You are paying $0 now')
+      let final=document.querySelector('.onTheWay');
+      $('#promo').text($('#total-price').val())
     final.style.display='block';
     let address=document.querySelector('.payment');
     address.style.display='none';
     let lastCard=document.querySelector('.last-card');
     lastCard.style.display='block';
-    header1.style.display='none'
+    header1.style.display='none';
+    }
+    else {
+      alert('Please check your promo and try again')
+    }
   }
   else {
-    alert('Address can not be blank! Please enter your full address')
+    alert('Please make sure to enter your address in a right format')
   }
 
 }
+
+
+
 
 
 
