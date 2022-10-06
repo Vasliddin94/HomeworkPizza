@@ -164,7 +164,7 @@ function minus1() {
     let addChecked=document.querySelector('.add1');
     addChecked.innerHTML='Add';
     addChecked.disabled=false;
-    quantity.value--;
+    
   }
   price1.value=quantity.value*10.99;
   totalPrice.value=number.value*(10.99);
@@ -201,7 +201,7 @@ function minus2() {
     let addChecked=document.querySelector('.add2');
     addChecked.innerHTML='Add';
     addChecked.disabled=false;
-    quantity.value--;
+
   }
   price2.value=quantity.value*10.99;
   totalPrice.value=number.value*(10.99);
@@ -236,7 +236,7 @@ function minus3() {
     let addChecked=document.querySelector('.add3');
     addChecked.innerHTML='Add';
     addChecked.disabled=false;
-    quantity.value--;
+
   }
   price3.value=quantity.value*10.99;
   totalPrice.value=number.value*(10.99);
@@ -269,7 +269,7 @@ function minus4() {
     let addChecked=document.querySelector('.add4');
     addChecked.innerHTML='Add';
     addChecked.disabled=false;
-    quantity.value--;
+    
   }
   price4.value=quantity.value*10.99;
   totalPrice.value=number.value*(10.99);
@@ -302,7 +302,7 @@ function minus5() {
     let addChecked=document.querySelector('.add5');
     addChecked.innerHTML='Add';
     addChecked.disabled=false;
-    quantity.value--;
+   
   }
   price5.value=quantity.value*10.99;
   totalPrice.value=number.value*(10.99);
@@ -335,7 +335,7 @@ function minus6() {
     let addChecked=document.querySelector('.add6');
     addChecked.innerHTML='Add';
     addChecked.disabled=false;
-    quantity.value--;
+    
   }
   price6.value=quantity.value*10.99;
   totalPrice.value=number.value*(10.99);
