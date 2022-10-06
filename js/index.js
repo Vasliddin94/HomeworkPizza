@@ -364,7 +364,7 @@ $('.address1').keyup(function() {
 function finalPage(){
   let address1=document.querySelector('.address1').value;
   let header1=document.querySelector('.header1');
-  if (address1.length>5 && $('.address2').val().length>5 && $('.address3').val().length>6) {
+  if (address1.length>5 && $('.address2').val().length>5) {
     let a=prompt('Please enter promo code:');
     if(a.toLowerCase().split(' ').join('')==='vasliddin'){
       alert('Congratulations you have succesfully activated your prome code!!! You are paying $0 now')
