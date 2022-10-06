@@ -507,6 +507,31 @@ form{
     background-repeat: no-repeat;
   }
 
+  .coupon img{
+    width: 20%;
+    height: 40px;
+  }
+  
+  .background .coupon{
+    perspective: 1000px;
+    padding-top: 5%;
+    padding-right: 0;
+    text-align: center;
+    padding-left: 10%;
+    position: relative;
+    left: -10%;
+    width: 115%;
+    top: 5%;
+    background-color: #c6e0da;
+    opacity: 0.7;
+    background-color: #c6e0da ;
+    transform: rotateZ(-10deg);
+    }
+
+    .coupon h3{
+      font-size: 20px;
+    }
+
   .onTheWay h2{
     font-size: 20px;
   }
